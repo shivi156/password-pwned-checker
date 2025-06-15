@@ -9,8 +9,7 @@ REM Activate the virtual environment
 call venv\Scripts\activate.bat
 
 REM Upgrade pip and install requirements
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements.txt > /dev/null 2>&1
 
 REM Run the password checker
 python password_pwned_checker.py
