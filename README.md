@@ -1,10 +1,21 @@
-# Password Pwned Checker
+# 🔐 Password Pwned Checker
 
-Python CLI tool to check if your passwords have been compromised.
+A simple Python CLI tool that checks whether your password(s) have been exposed in known data breaches using the [Have I Been Pwned](https://haveibeenpwned.com/) API.
 
-## Features
+## 🛡️ Why Use This?
 
-- Check if a password has appeared in data breaches
-- Never sends your full password — only the first 5 chars of its SHA-1 hash
-- Simple CLI tool, no account or API key needed
-- Built with Python using HIBP’s public and secure API
+Data breaches happen frequently, and many passwords become public without users knowing. This tool helps you stay safe by checking if your password has ever appeared in a public breach — **without exposing your actual password** to any server.
+
+It uses **k-Anonymity** via the official Pwned Passwords API to ensure your privacy.
+
+---
+
+## 📦 Features
+
+- ✅ Check one or multiple passwords via the command line
+- ✅ Uses secure SHA-1 hashing and partial hash querying
+- ✅ No password is ever sent in full
+- ✅ Fast and lightweight
+- ✅ Works offline after hash is sent
+
+---
